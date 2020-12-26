@@ -1,0 +1,50 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+section{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+section #slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.navigation{
+    width: 100%;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navigation li{
+    list-style: none;
+    margin: 20px;
+    cursor: pointer;
+}
+.navigation li .video_navigation:hover{
+    width: 14rem;
+    opacity: 1;
+}
+.navigation li .video_navigation{
+    width: 10.5rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    opacity: .5;
+    padding: 0;
+    transition: .5s ease all;
+}
